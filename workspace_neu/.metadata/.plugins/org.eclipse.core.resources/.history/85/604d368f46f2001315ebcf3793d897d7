@@ -1,0 +1,83 @@
+package gui;
+import com.cloudgarden.layout.AnchorLayout;
+import java.awt.BorderLayout;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+import javax.swing.WindowConstants;
+import javax.swing.SwingUtilities;
+
+
+/**
+* This code was edited or generated using CloudGarden's Jigloo
+* SWT/Swing GUI Builder, which is free for non-commercial
+* use. If Jigloo is being used commercially (ie, by a corporation,
+* company or business for any purpose whatever) then you
+* should purchase a license for each developer using Jigloo.
+* Please visit www.cloudgarden.com for details.
+* Use of Jigloo implies acceptance of these licensing terms.
+* A COMMERCIAL LICENSE HAS NOT BEEN PURCHASED FOR
+* THIS MACHINE, SO JIGLOO OR THIS CODE CANNOT BE USED
+* LEGALLY FOR ANY CORPORATE OR COMMERCIAL PURPOSE.
+*/
+public class Fahrenheit_Celsius extends javax.swing.JFrame {
+	private JLabel jLFahrenheit;
+	private JTextField jTFCelsius;
+	private JLabel jLCelsius;
+	private JTextField jTFFahrenheit;
+
+	/**
+	* Auto-generated main method to display this JFrame
+	*/
+	public static void main(String[] args) {
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				Fahrenheit_Celsius inst = new Fahrenheit_Celsius();
+				inst.setLocationRelativeTo(null);
+				inst.setVisible(true);
+			}
+		});
+	}
+	
+	public Fahrenheit_Celsius() {
+		super();
+		initGUI();
+	}
+	
+	private void initGUI() {
+		try {
+			setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+			getContentPane().setLayout(null);
+			this.setPreferredSize(new java.awt.Dimension(400, 300));
+			{
+				jLFahrenheit = new JLabel();
+				jLFahrenheit.setLayout(null);
+				getContentPane().add(jLFahrenheit, "Center");
+				jLFahrenheit.setText("Grad Fahrenheit");
+				jLFahrenheit.setBounds(12, 12, 116, 14);
+			}
+			{
+				jTFFahrenheit = new JTextField();
+				getContentPane().add(jTFFahrenheit, "North");
+				jTFFahrenheit.setBounds(12, 32, 152, 21);
+			}
+			{
+				jLCelsius = new JLabel();
+				getContentPane().add(jLCelsius, "West");
+				jLCelsius.setText("Grad Celsius");
+				jLCelsius.setBounds(12, 77, 116, 14);
+			}
+			{
+				jTFCelsius = new JTextField();
+				getContentPane().add(jTFCelsius, "East");
+				jTFCelsius.setBounds(12, 101, 152, 21);
+			}
+			pack();
+			this.setSize(400, 295);
+		} catch (Exception e) {
+		    //add your error handling code here
+			e.printStackTrace();
+		}
+	}
+
+}

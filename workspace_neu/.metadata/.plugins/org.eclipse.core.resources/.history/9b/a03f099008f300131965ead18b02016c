@@ -1,0 +1,31 @@
+package gui;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.text.DecimalFormat;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.WindowConstants;
+import javax.swing.SwingUtilities;
+
+public class Fahrenheit_Celsius extends javax.swing.JFrame {
+	private JLabel JLFahrenheit;
+	private JTextField jTFFahrenheit;
+	private JLabel jLCelsius;
+	private JTextField jTFCelsius;
+	private JButton jBtnEnde;
+	private JButton jBtnUmrechnen;
+	
+	public static void main(String[] args) {
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				Fahrenheit_Celsius inst = new Fahrenheit_Celsius();
+				inst.setLocationRelativeTo(null);
+				inst.setVisible(true);
+			}
+		});
+	}
+}

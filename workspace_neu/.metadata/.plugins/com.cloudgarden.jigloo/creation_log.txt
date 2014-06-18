@@ -1,0 +1,12 @@
+
+*** Abnormal shutdown while parsing "System.exit(0);
+" in class gui.Fahrenheit_Celsius
+
+Please look for calls to System.exit which might be made parsing "System.exit(0);
+" in a blank environment.
+
+You can use java.beans.Beans.isDesignTime(), which will return true when in Jigloo, to determine when a call to System.exit is not necessary.
+
+java.lang.Throwable
+	at com.cloudgarden.jigloo.jiglooPlugin$3.run(jiglooPlugin.java:188)
+
